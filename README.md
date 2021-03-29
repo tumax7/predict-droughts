@@ -22,6 +22,20 @@ This project is based on the data from Kaggle (https://www.kaggle.com/cdminix/us
 3. Then run the main.py script to run the actual model.
 
 ## Results
-In the end I managed to achieve: Test F1 of about 0.2, with the weights I included. In order to improve the model, I would consider switching the Neural Network type to Recurrent NN as the 'score' is not based on one instance, but on the historical data as well.
+These are the results (with minibatch=64) I achieved with the weights included.
 
+-  Validation Loss: 0.9437624216079712
+-  Validation MAE: 0.6700882911682129
+-  Validation F1 Score: 0.19843542239945847
+
+![Validation Confusion Matrix](./images/Validation%20Matrix.png)
+
+-  Test Loss: 0.8818807601928711
+-  Test MAE: 0.6324158310890198
+-  Test F1 Score: 0.1942177377204588
+
+![Test Confusion Matrix](./images/Test%20Matrix.png)
+
+We can see that the errors are smaller in the Test set compared to the Validation Set, unlike the F1 score, which is lower. This means that the model predicts more of the majority class ('0') in the test set.
+In order to improve the model, I would consider switching the Neural Network type to Recurrent NN as the 'score' is not based on one instance, but on the historical data as well.
 
