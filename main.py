@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 from sklearn.preprocessing import PowerTransformer
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf
 from sklearn.metrics import confusion_matrix, f1_score
+
 
 # Importing_data
 data_train = pd.read_csv('train_with_soil.csv', nrows=10000)
