@@ -1,11 +1,11 @@
 # Predicting Drought
 ## Table of Contents
-* [Intro](#intro)
+* [Info](#info)
 * [Requirements](#requirements)
 * [Setup](#setup)
 * [Results](#results)
 
-## Intro
+## Info
 This project is based on the data from Kaggle (https://www.kaggle.com/cdminix/us-drought-meteorological-data). The goal is to use various meteorological and soil data to predict drought level. I have chosen to use weekly data instead of given daily, this is due to the fact that the 'score' (target variable) is only given at weekly intervals. Also, I have split the data set into data_processing and main to avoid RAM issues, as all the data is over 3 GB. I have decided to go for a regression model over typical multi-class classification, as the scores provided in the train dataset where continuous. Also, I used 3 layer Neural Network with 1000 units in each layer. I implemented Batch Normalization to improve the performance of the model and reduce overfitting. 
 
 
